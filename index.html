@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan with Clara · Personal financial planning sessions</title>
+  <meta name="description" content="Book a free 10-minute preview, a 40-minute planning session or a 30-minute review with Clara Teh. Protection, medical, retirement, education and legacy planning. 和 Clara 一起规划你的财务。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Plan with <b>Clara</b></a>
+    <nav class="nav">
+      <a href="#cover"><span lang="en">What we plan</span><span lang="zh">规划内容</span></a>
+      <a href="#calc"><span lang="en">Retirement calculator</span><span lang="zh">退休计算器</span></a>
+      <a href="#book"><span lang="en">Book</span><span lang="zh">预约</span></a>
+      <a href="#about"><span lang="en">About</span><span lang="zh">关于我</span></a>
+      <button class="lang-btn" data-lang-toggle><span lang="en">中文</span><span lang="zh">EN</span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================== HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span lang="en">Personal financial planning</span><span lang="zh">个人财务规划</span></div>
+    <h1>
+      <span lang="en">Know where you stand.<br><em>Plan where you're going.</em></span>
+      <span lang="zh">看清现在，<br><em>规划未来。</em></span>
+    </h1>
+    <p class="lead">
+      <span lang="en">Protection, medical, retirement, your children's education, what you leave behind. One clear conversation to see if your money is doing what you need it to do.</span>
+      <span lang="zh">保障、医疗、退休、孩子的教育、留给家人的安排。一次清楚的谈话，看看你的钱是不是在做你需要它做的事。</span>
+    </p>
+    <div style="margin-top:30px">
+      <a class="btn" href="#book" data-book="preview"><span lang="en">Book a free 10-min preview</span><span lang="zh">预约免费 10 分钟初谈</span></a>
+      <a class="btn ghost" href="#calc"><span lang="en">Try the retirement calculator</span><span lang="zh">试试退休计算器</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== WHAT WE PLAN -->
+<section id="cover">
+  <div class="wrap">
+    <div class="eyebrow"><span lang="en">What we plan</span><span lang="zh">规划内容</span></div>
+    <h2><span lang="en">The questions behind every plan</span><span lang="zh">每份规划背后的几个问题</span></h2>
+    <div class="grid three" style="margin-top:28px">
+      <div class="card">
+        <div class="num"><span lang="en">Protection</span><span lang="zh">保障</span></div>
+        <p><span lang="en">If your income stopped tomorrow, how long would your family be fine?</span><span lang="zh">如果明天收入停了，家人能撑多久？</span></p>
+      </div>
+      <div class="card">
+        <div class="num"><span lang="en">Medical</span><span lang="zh">医疗</span></div>
+        <p><span lang="en">Will a hospital stay or a critical illness eat into your savings?</span><span lang="zh">一次住院或重病，会不会吃掉你的储蓄？</span></p>
+      </div>
+      <div class="card">
+        <div class="num"><span lang="en">Retirement</span><span lang="zh">退休</span></div>
+        <p><span lang="en">How much do you really need, and are you on track?</span><span lang="zh">你到底需要多少？现在的方向对吗？</span></p>
+      </div>
+      <div class="card">
+        <div class="num"><span lang="en">Education</span><span lang="zh">教育</span></div>
+        <p><span lang="en">Funding your children's studies without derailing your own plans.</span><span lang="zh">准备孩子的教育金，又不打乱自己的计划。</span></p>
+      </div>
+      <div class="card">
+        <div class="num"><span lang="en">Legacy</span><span lang="zh">传承</span></div>
+        <p><span lang="en">Will, nominations and trusts: making sure what you leave reaches the right people, quickly.</span><span lang="zh">遗嘱、受益人指定与信托：确保你留下的，能快速交到对的人手上。</span></p>
+      </div>
+      <div class="card">
+        <div class="num"><span lang="en">Your goals</span><span lang="zh">你的目标</span></div>
+        <p><span lang="en">A home, a sabbatical, travel, a business - we plan around what matters to you.</span><span lang="zh">买房、休假、旅行、创业——围绕你在乎的事来规划。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== CALCULATOR -->
+<section id="calc" class="book">
+  <div class="wrap">
+    <div class="eyebrow"><span lang="en">Retirement calculator</span><span lang="zh">退休计算器</span></div>
+    <h2><span lang="en">How much do you really need to retire?</span><span lang="zh">你退休到底需要多少钱？</span></h2>
+    <div class="calc">
+      <form id="calc-form" class="card" onsubmit="return false">
+        <div class="two">
+          <label><span lang="en">Current age</span><span lang="zh">现在年龄</span><input id="c-age" type="number" value="35" min="18" max="80"></label>
+          <label><span lang="en">Retirement age</span><span lang="zh">退休年龄</span><input id="c-ret" type="number" value="60" min="40" max="85"></label>
+        </div>
+        <div class="two">
+          <label><span lang="en">Plan until age</span><span lang="zh">规划到几岁</span><input id="c-life" type="number" value="85" min="60" max="110"></label>
+          <label><span lang="en">Monthly spending in retirement (RM, today's value)</span><span lang="zh">退休每月开销（RM，以今天的价值）</span><input id="c-spend" type="number" value="5000" min="0" step="100"></label>
+        </div>
+        <div class="two">
+          <label><span lang="en">Inflation (% a year)</span><span lang="zh">通胀（每年 %）</span><input id="c-inf" type="number" value="3" step="0.1"></label>
+          <label><span lang="en">Investment return (% a year)</span><span lang="zh">投资回报（每年 %）</span><input id="c-r" type="number" value="5" step="0.1"></label>
+        </div>
+        <div class="two">
+          <label><span lang="en">Savings today, incl. EPF (RM)</span><span lang="zh">目前储蓄，含公积金（RM）</span><input id="c-saved" type="number" value="150000" min="0" step="1000"></label>
+          <label><span lang="en">Saving each month (RM)</span><span lang="zh">每月储蓄（RM）</span><input id="c-monthly" type="number" value="1500" min="0" step="100"></label>
+        </div>
+      </form>
+      <div class="card result">
+        <p style="color:var(--muted);margin:0"><span lang="en">Your retirement number</span><span lang="zh">你的退休所需金额</span></p>
+        <p class="big" id="o-need">-</p>
+        <div class="row"><span><span lang="en">Years to retirement</span><span lang="zh">距离退休</span></span><b id="o-yto">-</b></div>
+        <div class="row"><span><span lang="en">Years in retirement</span><span lang="zh">退休年数</span></span><b id="o-yin">-</b></div>
+        <div class="row"><span><span lang="en">Monthly spending at retirement (after inflation)</span><span lang="zh">退休时每月开销（计入通胀）</span></span><b id="o-first">-</b></div>
+        <div class="row"><span><span lang="en">You'll have, on your current path</span><span lang="zh">照现在的方式，你会有</span></span><b id="o-have">-</b></div>
+        <div class="bar"><i id="o-bar"></i></div>
+        <div class="row"><span><span lang="en">Covered</span><span lang="zh">已覆盖</span></span><b id="o-cover">-</b></div>
+        <div class="row"><span><span lang="en">Extra to save each month</span><span lang="zh">每月还需多存</span></span><span id="o-extra">-</span></div>
+        <p data-short style="margin-top:16px"><span lang="en">There's a gap. A 40-minute planning session will look at realistic ways to close it.</span><span lang="zh">有缺口。40 分钟的规划会谈，会一起找出实际可行的补足方法。</span></p>
+        <p data-ontrack hidden style="margin-top:16px"><span lang="en">You look on track. A 30-minute review can check the assumptions and your protection.</span><span lang="zh">看起来方向正确。30 分钟的检视可以帮你确认假设和保障是否足够。</span></p>
+        <a class="btn" href="#book" data-book="planning"><span lang="en">Book a planning session</span><span lang="zh">预约规划会谈</span></a>
+        <p class="note"><span lang="en">Simplified estimate for education only: returns and inflation are assumed constant, taxes and fees are ignored. Not a recommendation.</span><span lang="zh">简化估算，仅供参考：假设回报与通胀固定，未计税费。不构成任何建议。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== HOW IT WORKS -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow"><span lang="en">How it works</span><span lang="zh">怎么进行</span></div>
+    <h2><span lang="en">Three sessions, at your pace</span><span lang="zh">三种会谈，按你的节奏</span></h2>
+    <div class="grid three steps" style="margin-top:40px">
+      <div class="card">
+        <h3><span lang="en">Preview · 10 min</span><span lang="zh">初谈 · 10 分钟</span></h3>
+        <p><span lang="en">Free. A quick chat about what you want to sort out, and whether a planning session makes sense.</span><span lang="zh">免费。快速聊聊你想理清什么，以及是否需要规划会谈。</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="en">Planning · 40 min</span><span lang="zh">规划 · 40 分钟</span></h3>
+        <p><span lang="en">We map your goals, your current cover and savings, and the gaps, and agree the priorities.</span><span lang="zh">一起梳理你的目标、现有保障与储蓄、缺口，并定下优先顺序。</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="en">Review · 30 min</span><span lang="zh">检视 · 30 分钟</span></h3>
+        <p><span lang="en">Life changes - marriage, a child, a new job. We check your plan still fits, yearly or whenever things change.</span><span lang="zh">人生会变——结婚、生子、换工作。每年或有变化时，检视计划是否仍然合适。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== BOOKING -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="eyebrow"><span lang="en">Book a session</span><span lang="zh">预约</span></div>
+    <h2><span lang="en">Choose a session and a time</span><span lang="zh">选择会谈类型和时间</span></h2>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-session="preview" aria-selected="true">
+        <strong><span lang="en">Preview</span><span lang="zh">初谈</span></strong>
+        <span class="mins">10 min · <span lang="en">Free</span><span lang="zh">免费</span></span>
+        <small><span lang="en">Get to know each other and what you'd like to plan.</span><span lang="zh">互相认识，聊聊你想规划什么。</span></small>
+      </button>
+      <button class="tab" role="tab" data-session="planning" aria-selected="false">
+        <strong><span lang="en">Planning</span><span lang="zh">规划</span></strong>
+        <span class="mins">40 min</span>
+        <small><span lang="en">Goals, current cover and savings, gaps and priorities.</span><span lang="zh">目标、现有保障与储蓄、缺口与优先顺序。</span></small>
+      </button>
+      <button class="tab" role="tab" data-session="review" aria-selected="false">
+        <strong><span lang="en">Review</span><span lang="zh">检视</span></strong>
+        <span class="mins">30 min</span>
+        <small><span lang="en">Check your existing plan still fits your life.</span><span lang="zh">检视现有计划是否仍适合你的生活。</span></small>
+      </button>
+    </div>
+    <div id="cal-box">
+      <div class="cal-placeholder">
+        <p><span lang="en">The booking calendar will appear here.</span><span lang="zh">预约日历将显示在这里。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <img class="photo" src="clara.jpg" alt="Clara Teh">
+    <div>
+      <div class="eyebrow"><span lang="en">About</span><span lang="zh">关于我</span></div>
+      <h2>Clara Teh</h2>
+      <p>
+        <span lang="en">I trained in law at the LSE and spent years in corporate legal work, including estate matters. I saw how often families struggle not because there wasn't enough money, but because nothing was planned or written down. Now I help individuals and families put protection, savings and legacy plans in place - in plain language, at a pace that suits you.</span>
+        <span lang="zh">我在伦敦政经学院（LSE）读法律，之后多年从事企业法务，也处理过遗产事务。我看到很多家庭陷入困境，不是因为钱不够，而是因为没有提前规划、没有写下来。现在，我帮助个人和家庭把保障、储蓄和传承安排好——用简单的话讲清楚，按你的节奏来。</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2><span lang="en">Common questions</span><span lang="zh">常见问题</span></h2>
+    <details>
+      <summary><span lang="en">Is the preview really free?</span><span lang="zh">初谈真的免费吗？</span></summary>
+      <p><span lang="en">Yes. 10 minutes, no obligation. If a planning session isn't useful for you, I'll say so.</span><span lang="zh">是的。10 分钟，没有任何义务。如果规划会谈对你没帮助，我会直接告诉你。</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">What should I prepare?</span><span lang="zh">需要准备什么？</span></summary>
+      <p><span lang="en">For planning: a rough idea of your monthly income and spending, your savings and EPF, and any policies you already hold. Approximate figures are fine.</span><span lang="zh">规划会谈：大概的每月收入和开销、储蓄与公积金，以及现有的保单。大约的数字就可以。</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">Online or in person?</span><span lang="zh">线上还是见面？</span></summary>
+      <p><span lang="en">Online by default, on Zoom. In-person can be arranged after the preview.</span><span lang="zh">默认线上，使用 Zoom。初谈之后可以安排见面。</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">Which language?</span><span lang="zh">用什么语言？</span></summary>
+      <p><span lang="en">English or Mandarin, whichever you prefer.</span><span lang="zh">英文或华语，看你方便。</span></p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="year"></span> Clara Teh</div>
+    <!-- TODO (Clara): add your licence / registration line here, as your agency's advertising rules require,
+         e.g. "Clara Teh is a registered agent of <company> (agent code ...)". Check the wording with your agency before publishing. -->
+    <div class="disc">
+      <span lang="en">Content and tools on this site are general information for educational purposes only and are not a recommendation or financial advice. Your situation will differ; get advice before making financial decisions.</span>
+      <span lang="zh">本网站的内容与工具仅供一般参考与教育用途，不构成任何推荐或财务建议。每个人情况不同，做财务决定前请先寻求专业意见。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
